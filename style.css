@@ -1,0 +1,277 @@
+:root {
+    --cor1: #FBF7EB;
+    --cor2: #950202;
+
+    --fonte-cormorant-infant: "Cormorant Infant", serif;
+    --fonte-montserrat: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--cor1);
+    
+}
+
+.cabecalho {
+    text-decoration: none;
+    font-family: var(--fonte-cormorant-infant);
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 10px;
+    border-bottom: black;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    
+}
+
+.cabecalho__menu__link:link {
+    color: black;
+}
+
+.cabecalho__menu__link:visited {
+    color: black;
+}
+
+.cabecalho__menu__link:hover {
+    color:var(--cor2);
+}
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: var(--fonte-montserrat)
+    
+    
+}
+
+.img1 {
+    max-width:550px;
+    max-height:550px;
+    width: auto;
+    height: auto;
+}
+
+.div1 {
+    width: 420px;
+    text-align: center;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    width: 630px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    gap: 30px;
+}
+
+.titulo {
+    font-family: var(--fonte-cormorant-infant);
+    
+
+}
+
+.link {
+    color: black;
+}
+
+.link:visited {
+    color: black;
+}
+
+.link:hover {
+    color: var(--cor2);
+}
+
+.seta {
+    width: 30px;
+    padding-top: 7px;
+}
+
+.div2_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.div2_2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.img2 {
+    width: 350px;
+    height: 316px;
+    border-radius: 77px 77px 77px 0px;
+    
+}
+
+.img2:hover {
+    box-shadow: 5px 5px 20px #c7c3b5;
+}
+
+.img2_1 {
+    width: 350px;
+    height: 316px;
+    border-radius: 77px 77px 0px 77px;
+}
+
+.img2_1:hover {
+    box-shadow: 5px 5px 20px #c7c3b5;
+}
+
+.img3 {
+    width: 350px;
+    height: 316px;
+    border-radius: 77px 77px 0px 77px;
+    object-fit: cover;
+    object-position: 25% 75%;
+    background-image: url(./imagens/img3.jpg) ;
+    background-size: 450px;
+    transition: 0.4s;
+}
+
+.img3:hover {
+    width: 350px;
+    height: 316px;
+    background-image: url(./imagens/img4.png);
+    background-size: 450px;
+    background-position: 50%;
+    box-shadow: 5px 5px 20px #c7c3b5;
+}
+
+.div2_2_1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    width: 250px;
+}
+
+.formulario {
+    width: 630px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.nome {
+    border-radius: 20px;
+    border: solid 1px grey;
+    height: 22px;
+    padding-left: 10px;
+}
+
+.email {
+    border-radius: 20px;
+    border: solid 1px grey;
+    height: 22px;
+    padding-left: 10px;
+}
+
+.selecionar {
+    width: 173px;
+    height: 25px;
+    border-radius: 20px;
+    padding-left: 5px;
+    cursor: pointer;
+    
+}
+
+.comentario {
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.radio {
+    cursor: pointer;
+}
+
+.botao {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: solid 1px grey;
+    background-color: var(--cor1);
+}
+
+.botao:hover {
+    background-color: #950202;
+    color: #FBF7EB;
+    cursor: pointer;
+}
+
+.botao:active {
+    background-color: #FBF7EB;
+    color: black;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 30px;
+    padding-bottom: 10px;
+    gap: 20px;
+
+    height: 100px;
+    width: 630px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+
+    font-family: var(--fonte-montserrat);
+    
+}
+
+.link2 {
+    color: var(--cor2);
+    font-family: var(--fonte-cormorant-infant);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+.link:visited {
+    color: black;
+}
+
+.link:hover {
+    color: var(--cor2);
+}

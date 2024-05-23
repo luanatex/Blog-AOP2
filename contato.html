@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Início</a>
+            <a class="cabecalho__menu__link" href="pinturas.html">Pinturas</a>
+            <a class="cabecalho__menu__link" href="artistas.html">Artistas</a>
+            <a class="cabecalho__menu__link" href="historia.html">História</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="div1">
+            <h1 class="titulo">Entre em Contato</h1>
+        </div>
+
+        <div class="formulario">
+            <form action="mailto:luana.teixeira@uvvnet.com.br" method="post">
+
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome" class="nome" size="30" maxlength="28" value="" required>
+                <br><br>
+
+                <label>E-mail</label>
+                <input type="email" name="email" id="email" class="email" size="30" maxlength="28" value="" required>
+                <br><br>
+
+                <label>Selecionar tipo:</label>
+                <select name="selecionar_tipo" class="selecionar">
+                    <option value="comentario">Comentário</option>
+                    <option value="pergunta">Pergunta</option>
+                    <option value="sugestao">Sugestão</option>
+                </select>
+
+                <br><br>
+                <textarea class="comentario" name="comentario" cols="50" rows="10" placeholder="Escreva aqui sua pergunta, comentário ou sugestão" ></textarea>
+
+                <br><br>
+                
+                <label style="padding-right: 30px;">Assinar Newsletter?</label>
+                
+                <label for="opcao1">Sim</label>
+                <input type="radio" class="radio" id="opcao1" name="opcao" value="yes">
+                <label for="opcao2" style="padding-left: 20px;">Não</label>
+                <input type="radio" class="radio" id="opcao2" name="opcao" value="no"><br>
+
+                <br><br>
+                <input type="submit" class="botao" value="Enviar E-mail" style="height: 50px; width: 150px; font-size: 16px;">
+                <br><br>
+                <input type="reset" class="botao" value="Limpar"
+
+            </form>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="rodape">
+            <p>Este site foi elaborado como exercício para a disciplina  Programação Web - Front End, ministrada pelo professor Fabricio Ribeiro Ferreira em 2024.</p>
+            <a href="#top" class="link2" >Voltar ao Topo</a>
+        </div>
+    </footer>
+</body>
+</html>
